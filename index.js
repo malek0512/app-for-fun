@@ -7,10 +7,10 @@ app.use(express.static(__dirname + '/public'));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+app.set('view engine', 'jade');
 
-app.get('/', function(request, response) {
-  response.render('pages/index')
+app.get('/', function(req, res) {
+  res.render('bootstrap3-templates/starter-template', {pathToAssets:'bootstrap'});
 });
 
 app.listen(app.get('port'), function() {
