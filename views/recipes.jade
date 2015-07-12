@@ -1,0 +1,38 @@
+extends base.jade
+mixin recipe(id, title, text, img, link)
+    a(id=id, href=link)
+        .col-lg-3.col-md-4.col-sm-6.col-xs-12.element-box
+            .app-blank
+                .col-md-12.box
+                    img(src=img, alt="Repas divin").img-responsive
+                    h4.brand-title= title
+                    p.intro.truncate= text
+
+mixin recipe2(id, title, text, img, link)
+    a(id=id, href=link)
+        .panel.panel-default
+            .panel-body
+                img(src=img, alt="Repas divin", style="width:100px;height:auto;").img-responsive
+                h4.brand-title= title
+            p(style="width: 150px;overflow:hidden")= text
+
+block content
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+    +recipe("first-recipe", "Repas divin", "Ceci est un bon repasqqqqqqqqqqqqqqqqqqqqqqqqqqq", "images/repas.jpeg", "#")
+

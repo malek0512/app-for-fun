@@ -1,27 +1,240 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+body {
+    padding-top: 70px;
+}
 
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.element-box {
+    padding: 0 4px;
+    margin: 4px 0;
+    display: inline-block;
+    position: relative;
+}
+.element-box:before {
+    font-family: 'heroku';
+    font-size: 22px;
+    line-height: 24px;
+    top: 12px;
+    left: 24px;
+    display: inline-block;
+    position: absolute;
+    color: rgba(121, 88, 159, 0.3);
+    z-index: 100;
+}
+.element-box.element-addon:before {
+    content: 'a'}
+.element-box.element-button:before {
+    content: 'c'}
+.element-box.element-buildpack:before {
+    font-size: 28px;
+    line-height: 24px;
+    top: 16px;
+    left: 20px;
+    color: rgba(121, 88, 159, 0.9);
+    content: 'b'}
+.element-box .app-blank {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #eeeeee;
+    -webkit-transition: border 150ms ease;
+    transition: border 150ms ease;
+}
+.element-box .app-blank.button-link:hover {
+    cursor: pointer;
+}
+.element-box .app-blank a, .element-box .app-blank a:hover {
+    text-decoration: none;
+}
+.element-box .app-blank:hover {
+    border: 1px solid #79589F;
+}
+.element-box .app-blank.badged {
+    position: relative;
+}
+.element-box .app-blank.badged .beta {
+    z-index: 100;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #78B743;
+    color: #fff;
+    border-radius: 1px;
+    padding: 2px 4px 2px 6px;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+}
+.element-box .app-blank.badged .heroku {
+    z-index: 100;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 14px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.element-box .app-blank.badged .heroku img {
+    width: 24px;
+    height: 24px;
+}
+.element-box .app-blank .box {
+    margin: 7.5px 0 0;
+}
+.element-box .app-blank .box p {
+    padding: 0;
+}
+.element-box .app-blank .intro {
+    font-size: 12px;
+    line-height: 16px;
+    height: 32px;
+    overflow: hidden;
+    color: #777;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+.element-box .app-blank .brand-logo-wrapper {
+    height: 60px;
+    margin: 5px auto;
+}
+.element-box .app-blank iframe.provider-logo {
+    height: 60px;
+    max-width: 70%;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.element-box .app-blank iframe.provider-logo img:hover {
+    cursor: pointer;
+}
+.element-box .app-blank .brand-logo {
+    display: block;
+    max-height: 60px;
+    max-width: 70%;
+    border-radius: 3px;
+    margin: 15px auto;
+}
+.element-box .app-blank .brand-logo.replacement {
+    background: url("/images/buttons-icon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 15px auto;
+    font-size: 0px;
+    height: 60px;
+    width: 60px;
+    color: #eeeeee;
+}
+.element-box .app-blank a:hover {
+    text-decoration: none;
+}
+.element-box .app-blank a:hover .brand-logo.icon {
+    color: #555555;
+}
+.element-box .app-blank .brand-title {
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.element-box .app-blank .logo img {
+    width: 80px;
+    max-width: 80%;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.element-box .app-blank .btn {
+    margin: 0 0 15px;
+}
+.element-box .app-blank .btn-primary, .element-box .app-blank .btn-default {
+    background-image: none;
+    border-radius: 2px;
+}
+.element-box .app-blank .footing {
+    color: #999999;
+    font-size: 11px;
+    padding: 5px 15px 5px 12px;
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.06);
+    line-height: 30px;
+    overflow: hidden;
+    background: #fff;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+.element-box .app-blank .footing .col-md-6 {
+    padding: 0;
+}
+.element-box .app-blank .footing a {
+    color: #999999;
+}
+.element-box .app-blank .footing a:hover {
+    color: #79589F;
+}
+.element-box .app-blank .footing .text-left {
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.element-box .app-blank .footing .text-right {
+    float: right;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.element-box .app-blank .footing .small {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.element-box .app-blank .footing .region {
+    text-transform: uppercase;
+}
+.element-box.element-button button[type="submit"] {
+    background-color: transparent;
+    border-radius: 0;
+}
+.element-box .buildpack .box {
+    margin-top: 15px;
+    padding-left: 54px;
+}
+.element-box .buildpack .github-logo {
+    color: #555555;
+    font-size: 15px;
+}
+.element-box .buildpack .intro, .element-box .buildpack .intro a {
+    color: #555555;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.element-box .buildpack .intro {
+    position: relative;
+    height: auto;
+}
+.element-box .buildpack .user {
+    padding: 0;
+    width: 50%;
+    float: left;
+}
+.element-box .footing .avatar {
+    margin: 0 5px 0 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    top: -1px;
+    position: relative;
+}

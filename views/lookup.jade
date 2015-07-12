@@ -1,0 +1,25 @@
+extends base.jade
+
+block contents
+    .row
+        .input-group
+            input(id="research", type="text", placeholder="Search for a diner ...").form-control
+            .input-group-btn
+                button(type"button").btn.btn-default Go!
+
+
+script.
+    var x = document.getElementById("research");
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;  
+    }

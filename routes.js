@@ -3,9 +3,7 @@ var router = module.exports = require('express').Router();
  //= router;
 
 router.get('/', function(req, res) {
-  res.render('bootstrap3-templates/starter-template', {
-	  pathToAssets:'bootstrap', 
-	  pathToSelectedTemplateWithinBootstrap : '/bootstrap/examples/starter-template'});
+  res.render('recipes');
 });
 
 router.get('/callback', function(req, res) {
